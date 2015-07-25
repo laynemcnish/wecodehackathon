@@ -1,4 +1,8 @@
 We Code Hackathon - Team 8
+
+https://wecodehackathon.herokuapp.com/
+
+Whole Jobs for Whole People
 ======
 
 API Endpoints
