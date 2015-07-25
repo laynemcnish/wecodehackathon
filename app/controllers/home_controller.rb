@@ -2,6 +2,14 @@ class HomeController < ApplicationController
   def index
   end
 
+  def search
+  end
+
+  def preferences
+    params
+    binding.pry
+  end
+
   def yelp
     postal_code = LocationService.new.get_location_by_ip(request).postal_code.empty? ? '97217' : LocationService.new.get_location_by_ip(request).postal_code
     search_term = params[:search_term]

@@ -1,9 +1,10 @@
-%div{"ng-app"=>"jobFinder"}
-  .panel.panel-success
-    .panel-heading
-      %h2{"ng-if"=>"name"}
-        Hello, {{name}}
-    .panel-body
-      %form.form-inline
-        .form-group
-          %input{type: "text", class: "form-control", placeholder: "Enter your name", "autofocus ng-model" => "name"}
+.index.vertical-center
+  .container
+    .row.text-center
+      %h1 Balancing Act
+    .row
+      .col-md-6.col-md-offset-3
+        = link_to "/home/search", {class:"btn btn-primary btn-lg center-block", id:"action-button"} do
+          .fa.fa-star Go
+
+
