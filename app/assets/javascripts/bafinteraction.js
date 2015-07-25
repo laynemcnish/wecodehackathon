@@ -1,8 +1,14 @@
 $(document).ready(function(){
     $( "#action-button" ).click(function(){
-     $(".container").slideUp("slow", function(){
-        //animation complete
-     });
+    $(".row").slideUp(500)
+            .delay(500)
+    });
+});
+
+$(document).ready(function(){
+    $( "#action-button" ).click(function(){
+    $(".row").slideUp(500)
+            .delay(500)
     });
 });
 
