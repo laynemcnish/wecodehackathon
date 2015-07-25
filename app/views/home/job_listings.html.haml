@@ -1,4 +1,4 @@
-= @params
+%h1 Search for: #{@params[:search_term]}
 %br
 %br
 
@@ -7,6 +7,10 @@
     %th Title
     %th Categories
     %th Summary
+  %tr
+    %td= link_to "Ruby Developer", "/home/job_show"
+    %td Consumer Digital Technology
+    %td Blah blah blah
   - @jobs.each do |job|
     %tr
       %td= job[:title]
