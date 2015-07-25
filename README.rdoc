@@ -43,3 +43,15 @@ API Endpoints
       }
     ]
   ```
+
+
+  Development Resources:
+  * Angular Tutorial
+    * http://angular-rails.com/bootstrap.html
+
+  * Rails Tutorial
+    * http://installfest.railsbridge.org/installfest/
+
+  * Front end development tool: Browser-Sync
+    * Once installed and your server is running, run the following command:
+      * browser-sync start --proxy 0.0.0.0:3000 --files 'app/views/**/*.haml, app/views/**/*.erb, app/assets/javascripts/**/*.js, app/assets/javascripts/**/*.coffee, app/assets/stylesheets/**/*.scss'
