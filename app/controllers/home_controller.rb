@@ -6,7 +6,7 @@ class HomeController < ApplicationController
   end
 
   def preferences
-    @search_term = params["search_term"]
+    @search_term = URI.escape(params["search_term"])
     redirect_to job_listings_home_path({:search_term => @search_term})
   end
 
@@ -18,6 +18,7 @@ class HomeController < ApplicationController
 
     service_response = JobService.new.search_by_postal_code(postal_code, search_term)
     @jobs = service_response.entity
+    @search_term = URI.unescape(params[:search_term])
   end
 
   def job_show
