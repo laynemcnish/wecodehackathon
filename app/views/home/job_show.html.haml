@@ -47,8 +47,8 @@
   .row
     .col-md-6
       %div{style: "border: 1px solid black; padding: 10px; height: 420px;"}
-        %h4 Childcare
         .childcare-div{style: "height: 400px; overflow: scroll;"}
+          %h4 Childcare
           - @childcare.each do |c|
             %ul
               %li= link_to c[:name], c[:url]
