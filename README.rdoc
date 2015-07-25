@@ -1,29 +1,29 @@
 We Code Hackathon - Team 8
 ======
 
-API Endpoints
-------
+  API Endpoints
+  ------
 
-* Yelp
-  * /home/yelp?search_term={SEARCH_TERM}
-  * Example GET Request: http://localhost:3000/home/yelp?search_term=gluten-free
-  * Example Response:
-  ```json
-    {
-      businesses: [
+    * Yelp
+      * /home/yelp?search_term={SEARCH_TERM}
+      * Example GET Request: http://localhost:3000/home/yelp?search_term=gluten-free
+      * Example Response:
+      ```json
         {
-        name: "Back To Eden Bakery",
-        rating: 4.5,
-        review_count: 370,
-        url: "http://www.yelp.com/biz/back-to-eden-bakery-portland",
-        phone: "5034775022",
-        snippet_text: "I got the spinach mushroom cashew tart and it was seriously good with a hint of cashew sweetness and so creamy. The staff were a little pretentious.",
-        is_closed: false,
-        id: "back-to-eden-bakery-portland",
-        image_url: "http://s3-media3.fl.yelpcdn.com/bphoto/8cgoCqRk2VfvJlTUCz2AhA/ms.jpg",
-        rating_img_url: "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
-        postal_code: "97211"
+          businesses: [
+            {
+            name: "Back To Eden Bakery",
+            rating: 4.5,
+            review_count: 370,
+            url: "http://www.yelp.com/biz/back-to-eden-bakery-portland",
+            phone: "5034775022",
+            snippet_text: "I got the spinach mushroom cashew tart and it was seriously good with a hint of cashew sweetness and so creamy. The staff were a little pretentious.",
+            is_closed: false,
+            id: "back-to-eden-bakery-portland",
+            image_url: "http://s3-media3.fl.yelpcdn.com/bphoto/8cgoCqRk2VfvJlTUCz2AhA/ms.jpg",
+            rating_img_url: "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            postal_code: "97211"
+            }
+          ]
         }
-      ]
-    }
-  ```
+      ```
