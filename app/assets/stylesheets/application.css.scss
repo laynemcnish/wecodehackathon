@@ -17,6 +17,10 @@
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 
+body {
+  background: #D3D9DF;
+}
+
 #action-button {
  background: #00CCFF;
  color: white;
@@ -39,4 +43,65 @@
 
   display: flex;
   align-items: center;
+}
+
+/*#########*/
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+    margin-right: 2.8em;
+}
+
+.nav{
+    margin: auto;
+    width: 63em;
+    height: 3em;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    border-style: solid;
+    opacity: 80%;
+    border-width: thin;
+/*    position: relative; 
+    top: 4em;
+    left: 8em;
+  */
+}
+
+.subtitle{
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+    margin-right: 4.6em;
+    position: relative;
+}
+
+
+p{
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+    margin-right: 8.5em;
+}
+
+.category ul{
+  height: 15em;
+}
+
+#Needs{
+    border-right-style: solid;  
+    border-right-width: thin;
+}
+
+#Wants{
+}
+
+#Likes{
+    border-left-style: solid;  
+    border-left-width: thin;
+}
+
+.wordbank{}
+
+.map{}
+
+.nav{
 }
