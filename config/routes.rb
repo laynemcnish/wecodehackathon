@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  root 'home#search'
 
   resource 'home' do
     get 'yelp' => 'home#yelp'

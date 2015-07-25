@@ -16,21 +16,42 @@
 
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 body {
-  /*background: #D3D9DF;*/
-}
-
-li {
-  list-style: none;
+  background-image: url("http://hdwyn.com/wallpaper/abstract_background_texture_bubbles_circles_hd-wallpaper-37815.jpg")
 }
 
 #action-button {
- background: #00CCFF;
- color: white;
- border: none;
+  background: #E4F2F3;
+  color: grey;
+  border: none;
+}
+.navbar-brand img {
+  width: 70px;
+  opacity: 1;
+}
+.navbar h1 {
+  float: right;
 }
 
+.navbar {
+  /*opacity: 0.8;*/
+  background: white;
+}
+.jobs-table {
+  background: #ffffff;
+  opacity: 0.7;
+  font-color: #000000;
+}
+
+
+.job-show-div {
+  background: #ffffff;
+  opacity: 0.7;
+  font-color: #000000;
+  padding: 10px;
+}
 
 .index {
   height: 600px;
@@ -74,11 +95,14 @@ li {
 
 .subtitle{
     font-family: 'Raleway', sans-serif;
-    text-align: right;
+    /*text-align: right;*/
     margin-right: 4.6em;
     position: relative;
 }
 
+li {
+  list-style: none;
+}
 
 p{
     font-family: 'Raleway', sans-serif;
