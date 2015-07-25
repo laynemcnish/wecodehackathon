@@ -34,5 +34,20 @@ class HomeController < ApplicationController
     end
   end
 
+  def glassdoor_reviews
+    company_name = params[:company_name]
+
+    ip_address = LocationService.new.get_location_by_ip(request).ip.empty? ? '71.238.42.189' : LocationService.new.get_location_by_ip(request).ip
+
+    service_response = GlassdoorService.new.search_by_company_name(ip_address, company_name)
+    if service_response.success
+      render json: {
+               companies: service_response.entity
+             }
+    else
+      render json: service_response.errors, status: :not_found
+    end
+  end
+
 
 end

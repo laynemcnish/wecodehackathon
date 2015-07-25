@@ -32,16 +32,38 @@ API Endpoints
   * Example GET Request: http://localhost:3000/home/jobs?search_term=ruby
   * Example Response:
   ```json
-    [
-      {
-        :categories=>["javascript", "twitter-bootstrap", "node.js", "html5", "css"],
-        :published=>2015-07-25 00:12:52 UTC,
-        :summary=>
-           "<p>We are a stable and growing software development company that is looking to add a passionate developer to our dynamic team. Do you want to create innovative and engaging technology? Are you a creative troubleshooter who can simplify complex processes, set clear objectives, and deliver under demanding deadlines? If you love developing quality code and having project ownership then this is the role for you!</p><br /><p><strong>What you'll be doing:</strong></p><br /><ul><br /><li>Crafting fluid views and interactions</li><br /><li>Building scalable and modular styles with Twitter Bootstrap</li><br /><li>Developing reusable, efficient, and well-tested components in JavaScript</li><br /><li>Working with a motivated, talented team of developers</li><br /><li>Participating in code reviews and public documentation</li><br /></ul><br /><p><strong>What's in it for you:</strong></p><br /><ul><br /><li>Work remotely in a fast-paced development environment where you will see the results of your work immediately</li><br /><li>Opportunity to work with the latest cutting-edge technology</li><br /><li>Casual relaxed atmosphere with a results-driven mentality</li><br /><li>Competitive compensation</li><br /></ul>",
-        :url=>"http://careers.stackoverflow.com/jobs/68988/senior-front-end-developer-treetop-commons",
-        :title=>"Senior Front End Developer at TreeTop Commons (Portland, OR)"
+    {
+      jobs:
+        [
+          {
+            :categories=>["javascript", "twitter-bootstrap", "node.js", "html5", "css"],
+            :published=>2015-07-25 00:12:52 UTC,
+            :summary=>
+               "<p>We are a stable and growing software development company that is looking to add a passionate developer to our dynamic team. Do you want to create innovative and engaging technology? Are you a creative troubleshooter who can simplify complex processes, set clear objectives, and deliver under demanding deadlines? If you love developing quality code and having project ownership then this is the role for you!</p><br /><p><strong>What you'll be doing:</strong></p><br /><ul><br /><li>Crafting fluid views and interactions</li><br /><li>Building scalable and modular styles with Twitter Bootstrap</li><br /><li>Developing reusable, efficient, and well-tested components in JavaScript</li><br /><li>Working with a motivated, talented team of developers</li><br /><li>Participating in code reviews and public documentation</li><br /></ul><br /><p><strong>What's in it for you:</strong></p><br /><ul><br /><li>Work remotely in a fast-paced development environment where you will see the results of your work immediately</li><br /><li>Opportunity to work with the latest cutting-edge technology</li><br /><li>Casual relaxed atmosphere with a results-driven mentality</li><br /><li>Competitive compensation</li><br /></ul>",
+            :url=>"http://careers.stackoverflow.com/jobs/68988/senior-front-end-developer-treetop-commons",
+            :title=>"Senior Front End Developer at TreeTop Commons (Portland, OR)"
+          }
+        ]
       }
-    ]
+  ```
+
+* Glassdoor
+  * /home/glassdoor_reviews?company_name={COMPANY_NAME}
+  * Example GET Request: http://localhost:3000/home/glassdoor_reviews?company_name=nike
+  * Example Response:
+  ```json
+    {
+      companies:
+        [
+          {
+            company_name: "NIKE",
+            industry: "Consumer Products Manufacturing",
+            logo_img_url: "https://media.glassdoor.com/sqll/1699/nike-squarelogo.png",
+            work_life_balance_rating: "3.7",
+            rating_description: "Satisfied"
+          }
+        ]
+      }
   ```
 
 
