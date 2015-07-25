@@ -1,0 +1,9 @@
+.container-fluid{"ng-app"=>"jobFinder"}
+  .panel.panel-success
+    .panel-heading
+      %h2{"ng-if"=>"name"}
+        Hello, {{name}}
+    .panel-body
+      %form.form-inline
+        .form-group
+          %input{type: "text", class: "form-control", placeholder: "Enter your name", "autofocus ng-model": "name"}

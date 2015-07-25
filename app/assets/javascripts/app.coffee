@@ -1,0 +1,2 @@
+jobFinder = angular.module('jobFinder',[
+])
