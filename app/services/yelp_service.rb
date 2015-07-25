@@ -11,7 +11,7 @@ class YelpService
 
   def search_by_postal_code(postal_code, search_term)
     params = {term: search_term,
-              limit: 15
+              limit: 5
     }
 
     response = client.search(postal_code, params).businesses

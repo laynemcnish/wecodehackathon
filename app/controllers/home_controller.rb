@@ -22,9 +22,12 @@ class HomeController < ApplicationController
 
   def job_show
     postal_code = LocationService.new.get_location_by_ip(request).postal_code.empty? ? '97217' : LocationService.new.get_location_by_ip(request).postal_code
-    search_term = params[:search_term]
+    service_response = YelpService.new.search_by_postal_code(postal_code, "childcare")
+    ip_address = LocationService.new.get_location_by_ip(request).ip.empty? ? '71.238.42.189' : LocationService.new.get_location_by_ip(request).ip
 
-    service_response = YelpService.new.search_by_postal_code(postal_code, search_term)
+    glassdoor_response = GlassdoorService.new.search_by_company_name(ip_address, "Nike")
+    @childcare = service_response.entity
+    @glassdoor = glassdoor_response.entity.first
   end
 
   def yelp

@@ -1,1 +1,30 @@
-JOB SHOW
+%h1 Company: Nike
+%h2 Job Title: Ruby Developer
+%h3 Category: Consumer Digital Technology
+
+
+%div{style: "border: 1px solid black; padding: 10px;"}
+  %h4 Childcare
+  .childcare-div{style: "height: 400px; overflow: scroll;"}
+    - @childcare.each do |c|
+      %ul
+        %li= link_to c[:name], c[:url]
+        %li
+          %img{src: "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png"}
+        %li= c[:snippet_text]
+        %hr
+
+
+%hr
+= @glassdoor
+%div{style: "border: 1px solid black; padding: 10px;"}
+  .glassdoor-div{style: "height: 400px; overflow: scroll;"}
+    %h4 Glassdoor
+    %ul
+      %li= @glassdoor[:company_name]
+      %li= @glassdoor[:industry]
+      %li
+        %img{src: "#{@glassdoor[:logo_img_url]}"}
+      %li
+        %img{src: "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_4_half.png"}
+      %li= @glassdoor[:rating_description]
