@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $( "#action-button" ).click(function(){
-     $(".container").slideUp("slow", function(){
+     $(".row").slideUp(.slideUp(500).delay(100),function(){
         //animation complete
      });
     });
