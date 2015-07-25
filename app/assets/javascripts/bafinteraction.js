@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $( "#action-button" ).click(function(){
     $(".row").slideUp(500)
-            .delay(499)
+            .delay(498)
     });
 });
 
