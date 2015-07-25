@@ -11,10 +11,18 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'capistrano-rails'
+gem 'capistrano-rvm'
+gem 'capistrano-npm'
+gem 'figaro'
+gem 'therubyracer'
+gem 'foreigner'
+gem 'httpclient'
+gem 'geocoder'
+gem 'yelp', require: 'yelp'
+gem 'faraday'
+gem 'font-awesome-sass'
 
-# Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
@@ -36,6 +44,7 @@ group :production, :staging do
 end
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
@@ -44,5 +53,10 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'selenium-webdriver'
+  gem 'pry'
 end
 
+group :development do
+  gem 'httplog'
+  gem 'quiet_assets'
+end
