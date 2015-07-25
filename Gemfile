@@ -22,7 +22,7 @@ gem 'geocoder'
 gem 'yelp', require: 'yelp'
 gem 'faraday'
 gem 'font-awesome-sass'
-
+gem 'feedjira'
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
