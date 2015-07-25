@@ -1,12 +1,13 @@
-We Code Hackathon
+#We Code Hackathon
 Team 8
+------
 
-API Endpoints
+##API Endpoints
 
-* Yelp
-** /home/yelp?search_term={SEARCH_TERM}
-** Example GET Request: http://localhost:3000/home/yelp?search_term=gluten-free
-** Example Response:
+-Yelp
+--/home/yelp?search_term={SEARCH_TERM}
+--Example GET Request: http://localhost:3000/home/yelp?search_term=gluten-free
+--Example Response:
 ```json
   {
     businesses: [
