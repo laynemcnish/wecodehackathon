@@ -1,6 +1,7 @@
-# We Code Hackathon - Team 8
+We Code Hackathon - Team 8
+======
 
-## API Endpoints
+API Endpoints
 
 * Yelp
   * /home/yelp?search_term={SEARCH_TERM}
