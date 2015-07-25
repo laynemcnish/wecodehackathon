@@ -1,11 +1,9 @@
 $(document).ready(function(){
     $( "#action-button" ).click(function(){
-     $(".row").slideUp(.slideUp(500).delay(100),function(){
-        //animation complete
-     });
+    $(".row").slideUp(500)
+            .delay(499)
     });
 });
-
 
 // Drag and drop code
 

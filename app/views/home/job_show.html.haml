@@ -1,11 +1,10 @@
-%div.job-show-div
-  %h1 About the job:
-  %br
-  %h2 Company: Nike
-  %h3
+%div.job-show-div{style:"padding: 20px;"}
+  %h3 Work
+  %h4
     = link_to "Sr Java Developer", "http://jobs.nike.com/portland/digital-﹠-technology/senior-java-application-engineer-consumer-digital-technology-jobs"
-  %h4 Category: Consumer Digital Technology
-
+  %h5 Company: Nike
+  %h6 Category: Consumer Digital Technology
+  %hr
 
   NIKE, Inc. does more than outfit the world’s best athletes. It is a place to explore potential, obliterate boundaries and push out the edges of what can be. The company looks for people who can grow, think, dream and create. Its culture thrives by embracing diversity and rewarding imagination. The brand seeks achievers, leaders and visionaries. At Nike, it’s about each person bringing skills and passion to a challenging and constantly evolving game
   %br
@@ -16,7 +15,7 @@
 
   %ul
     %li
-      %h4 Qualifications
+      %h6 Qualifications
     %ul
       %li    5+ years of professional experience developing Java based applications and solutions
       %li    Diverse experience utilizing a wide array of Java tools in business, Web, and client-server environments including Java J2EE, Spring, MVC, and Web Services
@@ -30,44 +29,50 @@
       %li    Bachelors' degree Computer Science, Information Systems or a related field, with 2 years additional relevant professional experience accepted in lieu of a degree
   %br
   %br
+  %h3 Life
+  %hr
+  .row
+    .col-md-12
+      %div{style: "border: 1px solid black; padding: 10px;"}
+        .glassdoor-div{style: "height: 200px; overflow: scroll;"}
+          %h4 Accessibility Information
+          %ul
+            %li State: OR
+            %li Company Name: Nike Inc.
+            %li Wheelchair Accessible: Yes
+            %li Onsite Parking Available: Yes
+            %li Bike Parking: Yes
+            %li= link_to "Find Directions", "https://www.google.com/maps/dir/Current+Location/1+Bowerman+D+Beaverton+OR+97005", target: "_blank"
+  %br
+  .row
+    .col-md-6
+      %div{style: "border: 1px solid black; padding: 10px; height: 420px;"}
+        %h4 Childcare
+        .childcare-div{style: "height: 400px; overflow: scroll;"}
+          - @childcare.each do |c|
+            %ul
+              %li= link_to c[:name], c[:url]
+              %li
+                %img{src: "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png"}
+              %li= c[:snippet_text]
+              %hr
 
-  %div{style: "border: 1px solid black; padding: 10px;"}
-    %h4 Childcare
-    .childcare-div{style: "height: 400px; overflow: scroll;"}
-      - @childcare.each do |c|
-        %ul
-          %li= link_to c[:name], c[:url]
-          %li
-            %img{src: "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png"}
-          %li= c[:snippet_text]
-          %hr
 
+      %hr
+    .col-md-6
+      %div{style: "border: 1px solid black; padding: 10px; height: 420px;"}
+        .glassdoor-div{style: "height: 400px; overflow: scroll;"}
+          %h4 Glassdoor Reviews
+          %ul
+            %li
+              %img{src: "#{@glassdoor[:logo_img_url]}", style: "width: 100px;"}
+            %li= @glassdoor[:industry]
+            %li
+              %img{src: "http://s15.postimg.org/t8896tch7/nike_rating.png", style: "width: 200px;"}
+            %hr
+            %li= @glassdoor[:rating_description]
+            %li Pros - Work/life balance. Great pay. Awesome sense of consumer direction. Through training session with online modules. Good benefits with a 401K plan.
+            %li Cons - At the moment I'm am still fairly new and haven't run into any negative aspects to the company. My boss is amazing and so is my district manager.
 
   %hr
-  %div{style: "border: 1px solid black; padding: 10px;"}
-    .glassdoor-div{style: "height: 400px; overflow: scroll;"}
-      %h4 Glassdoor Reviews
-      %ul
-        %li= @glassdoor[:company_name]
-        %li= @glassdoor[:industry]
-        %li
-          %img{src: "#{@glassdoor[:logo_img_url]}", style: "width: 100px;"}
-        %li
-          %img{src: "http://s15.postimg.org/t8896tch7/nike_rating.png", style: "width: 200px;"}
-        %hr
-        %li= @glassdoor[:rating_description]
-        %li Pros - Work/life balance. Great pay. Awesome sense of consumer direction. Through training session with online modules. Good benefits with a 401K plan.
-        %li Cons - At the moment I'm am still fairly new and haven't run into any negative aspects to the company. My boss is amazing and so is my district manager.
-
-  %hr
-  %div{style: "border: 1px solid black; padding: 10px;"}
-    .glassdoor-div{style: "height: 200px; overflow: scroll;"}
-      %h4 Accessibility Information
-      %ul
-        %li State: OR
-        %li Company Name: Nike Inc.
-        %li Wheelchair Accessible: Yes
-        %li Onsite Parking Available: Yes
-        %li Bike Parking: Yes
-        %li= link_to "Find Directions", "https://www.google.com/maps/dir/Current+Location/1+Bowerman+D+Beaverton+OR+97005", target: "_blank"
 
