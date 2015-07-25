@@ -20,6 +20,10 @@ class HomeController < ApplicationController
     @jobs = service_response.entity
   end
 
+  def job_show
+
+  end
+
   def yelp
     postal_code = LocationService.new.get_location_by_ip(request).postal_code.empty? ? '97217' : LocationService.new.get_location_by_ip(request).postal_code
     search_term = params[:search_term]

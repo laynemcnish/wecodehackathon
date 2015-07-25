@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     get 'search' => 'home#search'
     post 'preferences' => 'home#preferences'
     get 'job_listings' => 'home#job_listings'
+    get 'job_show' => 'home#job_show'
   end
 
 end
