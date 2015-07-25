@@ -1,0 +1,14 @@
+= @params
+%br
+%br
+
+%table.table.table-hover.table-striped
+  %tr
+    %th Title
+    %th Categories
+    %th Summary
+  - @jobs.each do |job|
+    %tr
+      %td= job[:title]
+      %td= job[:categories]
+      %td= job[:summary].html_safe
